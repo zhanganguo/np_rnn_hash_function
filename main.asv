@@ -26,15 +26,15 @@ for trial = 1 : TRIALS
     hash_code_1 = hash(password1, rnn, 2);
     
     rnn = rnn_initialize(rnn);
-    password2 = '2b2FC1Pe6B94aZbD4740D7kd9L9B844f9g';
+    password2 = '5b2FC1Pe6B94aZbD4740D7kd9L9B844f9g';
     hash_code_2 = hash(password2, rnn, 2);
     
     rnn = rnn_initialize(rnn);
-    password3 = '1b2FC1Pe6B94aZbD4840D7kd9L9B844f9g';
+    password3 = '1b2FC1Pe6B94aZbD4240D7kd9L9B844f9g';
     hash_code_3 = hash(password3, rnn, 2);
     
     rnn = rnn_initialize(rnn);
-    password4 = '1b2FC1Pe6B94aZbD4740D7kd9L9B844f9h';
+    password4 = '1b2FC1Pe6B94aZbD4740D7kd9L9B844f9z';
     hash_code_4 = hash(password4, rnn, 2);
     
     rnn = rnn_initialize(rnn);
