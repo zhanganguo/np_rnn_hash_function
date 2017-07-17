@@ -1,0 +1,16 @@
+function hash_code = hash(password, rnn, k)
+
+target_code = nonlinear_preprocess(password);
+
+rnn = rnn_run(rnn, target_code);
+
+rnn.output = fix(rnn.output * 10^(k+1));
+out = dex2hex(rnn.output);
+output_value_1 = out(end-1);
+output_value_2 = abs(fix(rem(rnn.output * 1000, 10)));
+hash_code = [];
+for i = 1 : length(output_value_1)
+    hash_code = [hash_code output_value_1(i) output_value_2(i)];
+end
+
+end
